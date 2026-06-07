@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENIBOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Imagen izquierda -->
+    <div class="imagen-lateral izquierda">
+        <img src="benito.jpeg" alt="Benito Juárez">
+    </div>
+
+    <!-- Chatbot -->
+    <div class="contenedor">
+
+        <header>
+            <img src="logo.png" alt="Logo del colegio" class="logo">
+            <h1>BENIBOT</h1>
+            <p>Asistente para citas educativas</p>
+        </header>
+
+        <div class="chat" id="chat">
+
+            <div class="mensaje bot">
+                ¡Hola! Soy el ChatBot del Colegio Benito Juárez. ¿En qué puedo ayudarte?
+            </div>
+
+        </div>
+
+        <div class="opciones">
+
+            <button onclick="responder('¿Qué es el chatbot?')">¿Qué es el chatbot?</button>
+
+            <button onclick="responder('Solicitar cita')">Solicitar cita</button>
+
+            <button onclick="responder('Horarios docentes')">Horarios docentes</button>
+
+            <button onclick="responder('Horarios rector')">Horarios rector</button>
+
+            <button onclick="responder('Cancelar cita')">Cancelar cita</button>
+
+            <button onclick="responder('Reprogramar cita')">Reprogramar cita</button>
+
+            <button onclick="responder('Disponibilidad semanal')">Disponibilidad semanal</button>
+
+            <button onclick="responder('Requisitos para una cita')">Requisitos para una cita</button>
+
+        </div>
+
+        <!-- Entrada de texto -->
+        <div class="entrada">
+            <input
+                type="text"
+                id="mensaje"
+                placeholder="Escribe tu mensaje aquí..."
+            >
+
+            <button onclick="enviarMensaje()">
+                Enviar
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Imagen derecha -->
+    <div class="imagen-lateral derecha">
+        <img src="juarez.jpeg" alt="Benito Juárez">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
